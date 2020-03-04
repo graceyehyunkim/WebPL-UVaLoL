@@ -1,0 +1,17 @@
+.navbar {
+    background-color: teal;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+
+}
+
+.navbar a:hover{
+    background-color: rgb(21, 180, 180);
+    color: black;
+}
