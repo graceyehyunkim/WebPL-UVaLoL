@@ -9,7 +9,6 @@ function validateInfo() {
     }
 }
 
-/* Sets focus on "name" field on form */
-function setFocus() {
-    signupform.getElementById("namefield").focus();
-}
+document.getElementById("discord").addEventListener("click", function() {
+    confirm('You are about to leave the page. Continue?')
+})
