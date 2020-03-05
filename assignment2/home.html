@@ -1,4 +1,4 @@
-<!DOCTYPE HTML5>
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -56,11 +56,25 @@
                 height: 45%;
             }
         }
+        
+        .login-container {
+            float: right;
+        }
     </style>
 </head>
 
+<script src="custom.js"></script>
+<script>
+    //TODO: doesn't work
+    var link = document.getElementbyId("discord");
+    link.addEventListener('click', function() {
+        confirm('Leave the page?')
+    })
+</script>
+
 <body>
     <header>
+        <!--Navbar-->
         <head>
             <title>UVaLoL</title>
                 <link rel="stylesheet" href="navbar.css">
@@ -78,6 +92,7 @@
                 </form>
             </div>
         </div>
+        <!--Javascript to validate information-->
         <script>
             function validateInfo() {
                 if (document.getElementById("loginID").value === '') {
@@ -93,10 +108,14 @@
         <h1 style = "text-align: center">Welcome to UvaLoL LCS page!</h1>
         <hr>
     </header>
+
+
+
     <div id="col1">
+        <!--About-->
         <div class="container">
             <h2>About UVa LCS</h2>
-            <p>The University of Virginia's very own League of Legends players. <br> Join our <a href="https://discord.gg/erFKKhc">Discord</a> and our chatroom "UvaLoL" on the LoL client!</p> Current officers:
+            <p>The University of Virginia's very own League of Legends players. <br> Join our <a href="https://discord.gg/erFKKhc" id="discord">Discord</a> and our chatroom "UvaLoL" on the LoL client!</p> Current officers:
             <ul>
                 <li>Old President that still helps out a bit: Kane Lee</li>
                 <li>Presidents: Kelly Cen and Taylor Nelson</li>
@@ -108,6 +127,7 @@
     </div>
 
     <div id="col2">
+        <!--Upcoming tournaments + Sign Up button-->
         <div class="container">
             <h2>Upcoming Tournament</h2>
             <p>2020 Spring Split</p>
@@ -116,6 +136,7 @@
             <div style="clear: both;"></div>
         </div>
 
+        <!--Rules-->
         <div id="clear"></div>
         <div class="container">
             <h2>Rules</h2>

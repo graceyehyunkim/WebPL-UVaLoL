@@ -32,7 +32,7 @@
             padding: 15px;
         }
         
-        .submitbtn {
+        #submitbtn {
             background-color: #76D7C4;
         }
         
@@ -56,7 +56,6 @@
     </style>
 </head>
 
-
 <script>
     /* Sets focus on "name" field on form */
     function setFocus() {
@@ -64,24 +63,27 @@
     }
 
     /* Prompts filling form */
-    /*function signupValidate(formObj) {
-        var message = document.getElementById("msg");
-        message.innerHTML = "";
-        var inputs = document.getElementById("signup").getElementsById;
-        for (var i = 0; i < inputs.length; i++) {
-            if (inputs[i].name == "req") {
-                if (inputs[i].value == "") {
-                    message.innerHTML = msg[i];
+    /*
+        function signupValidate(formObj) {
+            var message = document.getElementById("msg");
+            message.innerHTML = "";
+            var inputs = document.getElementById("signup").getElementsById;
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].name == "req") {
+                    if (inputs[i].value == "") {
+                        message.innerHTML = msg[i];
+                    }
                 }
             }
-        }
-    }
-    */
+        }*/
+
     var msg = ["Name should not be empty", "ID should not be empty", "Email should not be empty"];
 </script>
 
+
 <body onload="setFocus()">
     <header>
+        <!--Navbar-->
         <head>
             <title>UVaLoL</title>
                 <link rel="stylesheet" href="navbar.css">
@@ -99,6 +101,7 @@
                 </form>
             </div>
         </div>
+        <!--Javascript to validate information-->
         <script>
             function validateInfo() {
                 if (document.getElementById("loginID").value === '') {
@@ -114,6 +117,7 @@
 
     <section id="form">
         <form id="signup" action="signupform_submit.php">
+            <!--Form container-->
             <div class="container">
                 <h1>2020 Spring Split Signup form</h1>
                 <hr>
@@ -123,16 +127,16 @@
 
                 <br>
                 <label for="name">Name</label><br>
-                <input id="namefield" type="text" id="name" name="req"><br>
+                <input id="namefield" type="text" id="name" required><br>
 
                 <label for="id">In-game ID</label><br>
-                <input type="text" id="ID" name="req"><br>
+                <input type="text" id="ID" required><br>
 
                 <label for="year">School year</label><br>
-                <input type="text" id="year" name="req"><br>
+                <input type="text" id="year" required><br>
 
                 <label for="email">Uva email</label><br>
-                <input type="text" id="email" name="req"><br>
+                <input type="text" id="email" required><br>
 
                 <label for="seasonrank">Your last season's rank</label><br>
                 <select id="seasonrank">
@@ -213,10 +217,9 @@
                 <label for="funfact">Fun fact about yourself</label><br>
                 <input type="text" name="funfact"><br>
 
-                <button type="submit" class="submitbtn">Submit</button>
+                <button type="submit" id="submitbtn" onclick="confirm('Press OK only if you have reviewed the application.')">Submit</button>
             </div>
         </form>
-        <div id="msg"></div>
     </section>
 </body>
 

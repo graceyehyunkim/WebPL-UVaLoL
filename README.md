@@ -25,21 +25,32 @@ Two event-specific updates:
 
 ### Javascript
 Five dynamic behavior
-* signupform.html - focus on first input on body load
+* signupform.html body focus()
+* home.html login validateInfo()
+* home.html login hello()
+* signupform.html button confirm()
 
 Client-side input validation:
 * validate form data
+ * custom.js validateInfo()
 * user-appropriate error messages
+ * custom.js validateInfo() alerts on empty user/pass with appropriate message
 
 DOM manipulation:
+* signupform.html - focus on first input <body onload=function()>
+* navbar login - onclick=validateInfo(), onsubmit="hello()"
 
-Event-specific update:
+Event-specific style/layout change:
+
 
 One event listener:
 
+
 One anonymous function:
+* see event listener
 
 One arrow function:
+
 
 ### Misc
 Support responsive design/layout
