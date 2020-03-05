@@ -41,7 +41,8 @@
         #col1 {
             float: left;
             width: 50%;
-            height: 100%
+            height: 100%;
+            padding: 7px;
         }
         
         #col2 {
@@ -50,11 +51,22 @@
             height: 100%;
         }
         
+        #discord {
+            color: rgb(133, 228, 212);
+        }
+        
+        #discord:hover {
+            color: red;
+        }
+        
+        #rulebook {
+            color: rgb(133, 228, 212);
+        }
+        
         .signupbtn {
             /*sign up button position*/
             float: right;
             background-color: rgb(199, 157, 80);
-            padding: 7px;
         }
         
         @media only screen and (max-width: 768px) {
@@ -72,14 +84,15 @@
     </style>
 </head>
 
-<body style= "background-color: rgb(49, 49, 49);">
-    <header style= "background-image: url('navbar.jpg');">
+<body style="background-color: rgb(49, 49, 49);">
+    <header style="background-image: url('navbar.jpg');">
         <!--Navbar-->
+
         <head>
             <title>UVaLoL</title>
-                <link rel="stylesheet" href="navbar.css">
+            <link rel="stylesheet" href="navbar.css">
         </head>
-        
+
         <div class="navbar">
             <a href="home.html" class="nav-item nav-link" routerLink='/home'>Home</a>
             <a href="list.html" class="nav-item nav-link" routerLink='/list'>Signup List</a>
@@ -93,7 +106,7 @@
             </div>
         </div>
 
-        <h1 style = "text-align: center; margin-top: 1.5%; margin-bottom: 1.5%; color: rgb(199, 157, 80);">UvaLoL LCS</h1>
+        <h1 style="text-align: center; margin-top: 1.5%; margin-bottom: 1.5%; color: rgb(199, 157, 80);">UvaLoL LCS</h1>
         <hr noshade>
     </header>
 
@@ -101,7 +114,7 @@
         <!--About-->
         <div class="container">
             <h2>About UVa LCS</h2>
-            <p>The University of Virginia's very own League of Legends players. <br> Join our <span style= "color: rgb(133, 228, 212);" id="discord"><u>Discord</u></span> and our chatroom "UvaLoL" on the LoL client!</p> Current officers:
+            <p>The University of Virginia's very own League of Legends players. <br> Join our <span id="discord"><u>Discord</u></span> and our chatroom "UvaLoL" on the LoL client!</p> Current officers:
             <ul>
                 <li>Old President that still helps out a bit: Kane Lee</li>
                 <li>Presidents: Kelly Cen and Taylor Nelson</li>
@@ -126,10 +139,9 @@
         <div id="clear"></div>
         <div class="container">
             <h2>Rules</h2>
-            <a href="" style= "color: rgb(133, 228, 212);">Link to the 2019-2020 rulebook</a>
+            <a href="" id="rulebook">Link to the 2019-2020 rulebook</a>
         </div>
     </div>
-
 </body>
 
 <script src="custom.js"></script>
