@@ -25,6 +25,7 @@ Two event-specific updates:
 
 ### Javascript
 Five dynamic behavior
+* signupform.html - focus on first input on body load
 
 Client-side input validation:
 * validate form data
