@@ -66,15 +66,6 @@
     </style>
 </head>
 
-<script src="custom.js"></script>
-<script>
-    //TODO: doesn't work
-    var link = document.getElementbyId("discord");
-    link.addEventListener('click', function() {
-        confirm('Leave the page?')
-    })
-</script>
-
 <body style= "background-color: rgb(49, 49, 49);">
     <header style= "background-image: url('navbar.jpg');">
         <!--Navbar-->
@@ -95,30 +86,16 @@
                 </form>
             </div>
         </div>
-        <!--Javascript to validate information-->
-        <script>
-            function validateInfo() {
-                if (document.getElementById("loginID").value === '') {
-                    alert('Please enter valid ID!');
-                } else if (document.getElementById("loginPassword").value === '') {
-                    alert('Please enter valid Password!');
-                } else {
-                    alert('Logged In');
-                }
-            }
-        </script>
 
         <h1 style = "text-align: center; margin-top: 1.5%; margin-bottom: 1.5%; color: rgb(199, 157, 80);">UvaLoL LCS</h1>
         <hr>
     </header>
 
-
-
     <div id="col1">
         <!--About-->
         <div class="container">
             <h2>About UVa LCS</h2>
-            <p>The University of Virginia's very own League of Legends players. <br> Join our <a href="https://discord.gg/erFKKhc" style= "color: rgb(133, 228, 212);"id="discord">Discord</a> and our chatroom "UvaLoL" on the LoL client!</p> Current officers:
+            <p>The University of Virginia's very own League of Legends players. <br> Join our <span style= "color: rgb(133, 228, 212);" id="discord"><u>Discord</u></span> and our chatroom "UvaLoL" on the LoL client!</p> Current officers:
             <ul>
                 <li>Old President that still helps out a bit: Kane Lee</li>
                 <li>Presidents: Kelly Cen and Taylor Nelson</li>
@@ -128,6 +105,16 @@
             </ul>
         </div>
     </div>
+
+    <script>
+        //TODO: doesn't work
+        document.getElementbyId("discord").innerHTML = hello;
+        document.getElementbyId("discord").addEventListener('click', function() {
+            window.onbeforeunload('Leave the page?')
+            alert('L?')
+            confirm('Leave the page?')
+        })
+    </script>
 
     <div id="col2">
         <!--Upcoming tournaments + Sign Up button-->
@@ -148,6 +135,8 @@
     </div>
 
 </body>
+
+<script src="custom.js"></script>
 
 <footer>
     <small>All Rights Reserved.</small>

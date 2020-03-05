@@ -1,5 +1,5 @@
 //Alerts user when login information is invalid
-function validateInfo() {
+const validateInfo = () => {
     if (document.getElementById("loginID").value === '') {
         alert('Please enter valid ID!');
     } else if (document.getElementById("loginPassword").value === '') {
@@ -8,7 +8,9 @@ function validateInfo() {
         alert('Logged In');
     }
 }
-
+//confirmation for leaving the page for discord link
 document.getElementById("discord").addEventListener("click", function() {
-    confirm('You are about to leave the page. Continue?')
-})
+    if(confirm('You are about to leave the page. Continue?') == true) {
+        window.location.href = "https://discord.gg/erFKKhc"
+    }
+});
