@@ -21,7 +21,9 @@ One external CSS file:
 
 Two event-specific updates:
 * home.html
-  * div layout change upon window size change
+ * div layout change upon window size change
+* home.html
+ * discord hover turns text red
 
 ### Javascript
 Five dynamic behavior
@@ -41,10 +43,10 @@ DOM manipulation:
 * navbar login - onclick=validateInfo(), onsubmit="hello()"
 
 Event-specific style/layout change:
-
+* home.html - custom.js mouseover/mouseout text change
 
 One event listener:
-
+* home.html Discord link onclick confirm()
 
 One anonymous function:
 * see event listener
