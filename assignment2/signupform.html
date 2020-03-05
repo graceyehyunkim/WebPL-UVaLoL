@@ -82,11 +82,34 @@
 
 <body onload="setFocus()">
     <header>
-        <nav>
-            <a href="home.html" style="color:white">Home</a>
-            <a href="list.html" style="color:white">Signup List</a>
-            <a href="draft.html" style="color:white">Draft</a>
-        </nav>
+        <head>
+            <title>UVaLoL</title>
+                <link rel="stylesheet" href="navbar.css">
+        </head>
+        
+        <div class="navbar">
+            <a href="home.html" class="nav-item nav-link" routerLink='/home'>Home</a>
+            <a href="list.html" class="nav-item nav-link" routerLink='/list'>Signup List</a>
+            <a href="draft.html" class="nav-item nav-link" routerLink='/draft'>Draft</a>
+            <div class="login-container">
+                <form name="loginForm" onsubmit="hello()">
+                    <input type="text" placeholder="Username" name="username" id="loginID">
+                    <input type="text" placeholder="Password" name="psw" id="loginPassword">
+                    <button type="submit" id="loginbutton" onclick="validateInfo()">Login</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            function validateInfo() {
+                if (document.getElementById("loginID").value === '') {
+                    alert('Please enter valid ID!');
+                } else if (document.getElementById("loginPassword").value === '') {
+                    alert('Please enter valid Password!');
+                } else {
+                    alert('Logged In');
+                }
+            }
+        </script>
     </header>
 
     <section id="form">
