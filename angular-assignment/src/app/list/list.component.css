@@ -3,3 +3,63 @@
     font-family: Arial;
     font-size: 20px;
 }
+
+#signup-list table{
+    overflow: auto;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.list-header th{
+    padding-left: 1.4%;
+    padding-right: 1.4%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    width: 10%;
+    overflow-wrap: anywhere;
+    text-align: center;
+    background-color: lightseagreen;
+    font-family: Arial;
+}
+
+.list-element td:nth-child(even){
+    padding: 0.5%;
+    height: 30px;
+    border: 1px solid black;
+    font-family: Arial;
+    font-size: 14px;
+    background-color: rgb(233, 233, 233);
+}
+
+.list-element td{
+    padding: 0.5%;
+    height: 30px;
+    border: 1px solid black;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.info {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .info .infotext {
+        visibility: hidden;
+        width: 200px;
+        background-color: rgb(49, 49, 49);
+        color: white;
+        text-align: center;
+        border-radius: 6px;
+        padding: 10px 10px;
+    
+        /* Position the tooltip */
+        position: absolute;
+        top:150%;
+        left: -100%;
+        z-index: 1;
+    }
+    
+    .info:hover .infotext {
+        visibility: visible;
+    }

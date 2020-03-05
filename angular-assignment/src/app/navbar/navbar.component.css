@@ -1,28 +1,29 @@
 .navbar {
-    background-color: teal;
+    background-color: goldenrod;
     overflow: hidden;
     padding: 0px;
     margin: 0px;
+    width: 100%;
 }
 
 .navbar a {
     float: left;
-    color: white;
+    color: rgb(49, 49, 49);
     text-align: center;
-    font-family: Arial;
-    font-size: 17px;
-    padding: 21px 30px;
+    font-family: Helvetica;
+    font-size: 20px;
+    padding: 21px 40px;
     text-decoration: none;
 }
 
 .navbar a:hover{
-    background-color: rgb(21, 180, 180);
-    color: black;
+    background-color: rgb(49, 49, 49);
+    color: white;
 }
 
 .login-container{
     float: right;
-    padding: 15px 30px;
+    padding: 15px 15px;
 }
 
 input[type=text] {
@@ -30,9 +31,13 @@ input[type=text] {
     font-size: 17px;
     border: none;
     width: 150px; 
+    margin-right: 20px;
 }
 
 .login-container button {
-    padding: 5px;
+    padding: 7px;
     font-size: 15px;
+    font-family: Arial;
+    background-color: rgb(49, 49, 49);
+    color: white;
 }
