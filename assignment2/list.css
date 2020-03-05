@@ -2,6 +2,7 @@
     text-align: center;
     font-family: Arial;
     font-size: 20px;
+    color: black;
 }
 
 #signup-list table {
@@ -28,15 +29,16 @@
     border: 1px solid black;
     font-family: Arial;
     font-size: 14px;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(32, 32, 32);
 }
 
 .list-element td {
     padding: 0.5%;
     height: 30px;
-    border: 1px solid black;
+    border: 1px solid rgb(199, 157, 80);
     font-family: Arial;
     font-size: 14px;
+    color: rgb(228, 194, 133);
 }
 
 .info {
