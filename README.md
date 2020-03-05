@@ -50,7 +50,7 @@ One anonymous function:
 * see event listener
 
 One arrow function:
-
+* custom.js validateInfo()
 
 ### Misc
 Support responsive design/layout
