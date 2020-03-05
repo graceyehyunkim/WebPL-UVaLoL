@@ -1,0 +1,95 @@
+<!DOCTYPE HTML5>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>UVaLoL</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Roboto;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        nav {
+            background-image: url("navbar.jpg");
+            padding: 15px;
+        }
+        
+        div[class=container] {
+            border-style: groove;
+        }
+        
+        #col1 {
+            float: left;
+            width: 50%;
+            height: 100%
+        }
+        
+        #col2 {
+            float: right;
+            width: 50%;
+            height: 100%;
+        }
+        
+        .signupbtn {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="home.html" style="font-weight:bold" style="color:white">Home</a>
+            <a href="list.html" style="color:white">Signup List</a>
+            <a href="draft.html" style="color:white">Draft</a>
+        </nav>
+    </header>
+    <div id="col1">
+        <div class="container">
+            <h2>About UVa LCS</h2>
+            <p>The University of Virginia's very own League of Legends players. <br> Join our <a href="https://discord.gg/erFKKhc">Discord</a> and our chatroom "UvaLoL" on the LoL client!</p> Current officers:
+            <ul>
+                <li>Old President that still helps out a bit: Kane Lee</li>
+                <li>Presidents: Kelly Cen and Taylor Nelson</li>
+                <li>Community Manager: David Xue and Andrew Wang</li>
+                <li>uLol Analyst: Ryan Kann</li>
+                <li>Casters: Gabe Argush, Taylor Smith, Chris Martin</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="col2">
+        <div class="container">
+            <h2>Upcoming Tournament</h2>
+            <p>2020 Spring Split</p>
+            <p>2/1 - 5/1</p>
+            <button onclick="window.location.href = 'signupform.html';" class="signupbtn">Sign Up</button>
+            <div style="clear: both;"></div>
+        </div>
+
+        <div id="clear"></div>
+        <div class="container">
+            <h2>Rules</h2>
+            <a href="">Link to the 2019-2020 rulebook</a>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <small>All Rights Reserved.</small>
+</footer>
+
+
+</html>
