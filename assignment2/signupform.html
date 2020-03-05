@@ -25,7 +25,7 @@
         }
         
         input[type=text] {
-            width: 100%;
+            width: 50%;
         }
         
         input[name=funfact] {
@@ -44,10 +44,43 @@
             background-image: url("navbar.jpg");
             padding: 15px;
         }
+        
+        @media only screen and (max-width: 768px) {
+            /*Changes when screen is too small*/
+            #col1,
+            #col2 {
+                width: 100%;
+                height: 45%;
+            }
+        }
     </style>
 </head>
 
-<body>
+
+<script>
+    /* Sets focus on "name" field on form */
+    function setFocus() {
+        document.getElementById("namefield").focus();
+    }
+
+    /* Prompts filling form */
+    /*function signupValidate(formObj) {
+        var message = document.getElementById("msg");
+        message.innerHTML = "";
+        var inputs = document.getElementById("signup").getElementsById;
+        for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].name == "req") {
+                if (inputs[i].value == "") {
+                    message.innerHTML = msg[i];
+                }
+            }
+        }
+    }
+    */
+    var msg = ["Name should not be empty", "ID should not be empty", "Email should not be empty"];
+</script>
+
+<body onload="setFocus()">
     <header>
         <nav>
             <a href="home.html" style="color:white">Home</a>
@@ -55,8 +88,9 @@
             <a href="draft.html" style="color:white">Draft</a>
         </nav>
     </header>
+
     <section id="form">
-        <form action="signupform_submit.php">
+        <form id="signup" action="signupform_submit.php">
             <div class="container">
                 <h1>2020 Spring Split Signup form</h1>
                 <hr>
@@ -66,16 +100,16 @@
 
                 <br>
                 <label for="name">Name</label><br>
-                <input type="text" name="name" required><br>
+                <input id="namefield" type="text" id="name" name="req"><br>
 
                 <label for="id">In-game ID</label><br>
-                <input type="text" name="id" required><br>
+                <input type="text" id="ID" name="req"><br>
 
                 <label for="year">School year</label><br>
-                <input type="text" name="year" required><br>
+                <input type="text" id="year" name="req"><br>
 
                 <label for="email">Uva email</label><br>
-                <input type="text" name="email" required><br>
+                <input type="text" id="email" name="req"><br>
 
                 <label for="seasonrank">Your last season's rank</label><br>
                 <select id="seasonrank">
@@ -154,11 +188,12 @@
                 <input type="text" name="captain"><br>
 
                 <label for="funfact">Fun fact about yourself</label><br>
-                <input type="text" name="funfact" required><br>
+                <input type="text" name="funfact"><br>
 
                 <button type="submit" class="submitbtn">Submit</button>
             </div>
         </form>
+        <div id="msg"></div>
     </section>
 </body>
 

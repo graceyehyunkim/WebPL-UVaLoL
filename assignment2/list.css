@@ -71,3 +71,13 @@ nav {
 body {
     font-family: Roboto;
 }
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        line-height: 1.1em;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1em;
+    }
+}
