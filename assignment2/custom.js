@@ -1,3 +1,5 @@
+/* Authors: Keunil Lee, Yehyun Kim */
+
 //Alerts user when login information is invalid
 const validateInfo = () => {
         if (document.getElementById("loginID").value === '') {

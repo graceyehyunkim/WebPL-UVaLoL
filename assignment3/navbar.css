@@ -1,0 +1,44 @@
+.navbar {
+    background-color: rgb(49, 49, 49);
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    color: rgb(199, 157, 80);
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 20px;
+    padding: 21px 40px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+.login-container {
+    float: right;
+    padding: 15px 15px;
+}
+
+input {
+    padding: 5px;
+    font-size: 17px;
+    border: none;
+    width: 150px;
+    margin-right: 20px;
+    color: white;
+}
+
+.login-container button {
+    padding: 7px;
+    font-size: 15px;
+    font-family: Arial;
+    background-color: rgb(49, 49, 49);
+    color: rgb(199, 157, 80);
+}
