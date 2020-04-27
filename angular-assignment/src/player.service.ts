@@ -11,14 +11,12 @@ import { Player } from './player';
   })
   export class PlayerService {
   
-    player = new Player(false, '', '', '', 0, '', '', '', '', '');
+    player = new Player(false, '', '', '', 0, '', '', '', '', '', 'password');
     players: Player[];
   
     constructor(private http: HttpClient) { }
   
     sendRequest(data: any): Observable<any> {
-      // return this.http.post('http://localhost/cs4640/inclass11/ngphp-post.php', data, {responseType: 'text'});
-      // return this.http.post('http://localhost/cs4640/inclass11/ngphp-post.php', data, {responseType: 'json'});
       return this.http.post('http://localhost/cs4640/ngphp-post.php', data);
     }
   
